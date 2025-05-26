@@ -11,25 +11,21 @@
 </head>
 <body>
     <main>
-        <form>
-            <!-- Input for job number -->
-            <label for="job-number">Job Number:</label>
-            <br>
-            <input type="tex" name="job-number" id="job-number" required>
-            <br>
+        <!-- Input for job number -->
+        <label for="job-number">Job Number:</label>
+        <br>
+        <input type="text" name="job-number" id="job-number" required maxlength="6">
+        <br>
 
-            <!-- Input for 2-letter-limit operator initials -->
-            <label for="op-initials">Operator Initials:</label>
-            <br>
-            <input type="text" name="op-initials" id="op-initials" maxlength="2">
-            <br>
+        <!-- Input for 2-letter-limit operator initials -->
+        <label for="user">Operator Initials:</label>
+        <br>
+        <input type="text" name="user" id="user" maxlength="2" required>
+        <br>
 
-            <!-- Submit button -->
-            <input type="submit" value="Submit">
-            <input type="reset" value="Clear">
-            
-        </form>
-
+        <!-- Submit button -->
+        <input type="submit" value="Submit" onclick="myFunction()">
+        <input type="reset" value="Clear" onclick="clearInputs()">
     </main>
 
     <script src="./actions.js"></script>
