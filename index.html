@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Jordan Bugglin">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Finish-Line Setup</title>
+</head>
+<body>
+    <main>
+        <form>
+            <!-- Input for job number -->
+            <label for="job-number">Job Number:</label>
+            <br>
+            <input type="tex" name="job-number" id="job-number" required>
+            <br>
+
+            <!-- Input for 2-letter-limit operator initials -->
+            <label for="op-initials">Operator Initials:</label>
+            <br>
+            <input type="text" name="op-initials" id="op-initials" maxlength="2">
+            <br>
+
+            <!-- Submit button -->
+            <input type="submit" value="Submit">
+            <input type="reset" value="Clear">
+            
+        </form>
+
+    </main>
+
+    <script src="./actions.js"></script>
+</body>
+</html>
