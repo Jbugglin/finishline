@@ -1,12 +1,23 @@
-function myFunction() {
-    //Print out job number and user values
-    let inputValue = document.getElementById("job-number").value;
+/**
+ * Main driver function - will add more elements as I go.
+ */
+function driverFunction() {
+    getJobNumber();     //Gets the job number
+    getUser();
+    outputInfo();       //Prints our info out - will be exporting to CSV best case scenario
+    //
+}
+
+function getJobNumber() {
+    let jobNumber = document.getElementById("job-number").value;
+    return jobNumber;
+}
+
+function getUser() {
     let user = document.getElementById("user").value;
-    
-    //print out date and time
-    let date = new Date();
-    let shortDate = date.toLocaleDateString('en-US');
-    //Get date in XX/XX/XXXX format 
-    //console.log(shortDate);
-    console.log(shortDate + " Job: " +inputValue+ " User: " + user);
+    return user;
+}
+
+function outputInfo() {
+    console.log(getJobNumber() + ' ' + getUser());
 }

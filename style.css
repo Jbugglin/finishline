@@ -9,3 +9,15 @@ html, body {
     width: 100dvw;
     height: 100dvh;
 }
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    max-width: 300px;
+    width: 90vw;
+    height: min-content;
+}
