@@ -5,8 +5,12 @@ function driverFunction() {
     getJobNumber();     //Gets the job number
     getUser();          //Gets operator initials
     getStartDate();
-    outputInfo();       //Prints our info out - will be exporting to CSV best case scenario
-    //
+    outputInfo();       //Prints our info out 
+    hideLogin();
+}
+
+function wtStart() {
+    displayCheckboxValue();
 }
 
 function getJobNumber() {
@@ -41,4 +45,40 @@ function outputInfo() {
     console.log("Job#: " +getJobNumber());
     console.log("Op-initials: " +getUser());
 
+}
+
+function hideLogin() {
+    let hideUserLogin = document.getElementById("user-login");
+    hideUserLogin.style.display = 'none';
+    displayProcess();
+}
+
+function displayProcess() {
+    document.getElementById("process-select").style.display = "block";;
+}
+
+function displayCheckboxValue() {
+    let x = document.getElementById('user-ack').value;
+    console.log(x);
+}
+/**
+ *  Show/Hide flow menus
+ */
+function showSheetFlow() {
+    document.getElementById('sheet-flow').style.display = 'block';
+    hideProcess();
+}
+
+function showFoldOnly() {
+    document.getElementById('fold-only').style.display = 'block';
+    hideProcess();
+}
+
+function showFoldGlue() {
+    document.getElementById('fold-glue').style.display = 'block';
+    hideProcess();
+}
+
+function hideProcess() {
+    document.getElementById('process-select').style.display = 'none';
 }

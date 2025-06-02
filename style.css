@@ -10,14 +10,39 @@ html, body {
     height: 100dvh;
 }
 
-body {
+#process-select,
+#sheet-flow,
+#fold-only,
+#fold-glue {
+    display: none;
+}
+
+.image-container {
+    width: 200px;
+    height: 200px;
+    border: 1px solid red;
+}
+
+body, main {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 main {
-    max-width: 300px;
-    width: 90vw;
-    height: min-content;
+    border: 1px solid rgb(59, 223, 59);
+    box-shadow: 0.25rem 0.25rem 0.75rem rgba(43, 150, 43, 0.579);
+    width: 85dvw;
+    height: 85dvh;
+}
+
+.step-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.direction {
+    width: 80%;
 }

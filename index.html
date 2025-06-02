@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
+    <meta name="description" content="Walkthrough web-app for the MBO finish-line machines. Constant work in progress.">
     <meta name="author" content="Jordan Bugglin">
     <link rel="stylesheet" href="style.css">
     
@@ -11,10 +11,12 @@
 </head>
 <body>
     <main>
+        <!-- Get Login info -->
+        <div id="user-login">
         <!-- Input for job number -->
         <label for="job-number">Job Number:</label>
         <br>
-        <input type="text" name="job-number" id="job-number" required maxlength="6">
+        <input type="text" name="job-number" id="job-number" maxlength="6" required>
         <br>
 
         <!-- Input for 2-letter-limit operator initials -->
@@ -25,6 +27,90 @@
 
         <!-- Submit button -->
         <input type="submit" value="Submit" onclick="driverFunction()">
+        </div>
+
+        <!-- Select which process flow -->
+        <div id="process-select">
+            <h1>Select Process: </h1>
+            <!-- Sheet (flat) -->
+            <input type="button" value="Sheet" onclick="showSheetFlow()">
+
+            <!-- Fold only (Letters w/optional score) -->
+            <input type="button" value="Fold Only" onclick="showFoldOnly()">
+
+            <!-- Fold and Glue (self-mailer) -->
+            <input type="button" value="Fold and Glue" onclick="showFoldGlue()">
+        </div>
+
+        <!--
+            Sheeting (Postcards mainly.):
+                1.Unwinder
+                2.SVC
+                3.Stacking Table 
+                4.***Optional: T-perf***
+        -->
+        <div id="sheet-flow">
+            <div class="step-container">
+                <h1>Sheet flow</h1>
+                <div class="image-container"></div>
+                <p class="direction">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi facere odit, doloremque placeat minima molestiae excepturi dolores explicabo et quo. Ex voluptates nihil animi dignissimos repudiandae. Tenetur reprehenderit blanditiis minima?</p>
+                <div class="acknowledge-container">
+                    Done: <input type="checkbox" id="user-acknowledge">
+                </div>
+                <div class="button-container">
+                    <button>Back</button>
+                    <button>Next</button>
+                </div>
+            </div>
+        </div>
+
+        <!--
+            Fold Only (Mostly letters, once this flow selected, will give optional score step mostly for the TFL brochure/Letter):
+                1.Unwinder
+                2.SVC 
+                3.Folding unit
+                4.Stacking Table
+                5.***Optional: perf/score*** 
+        -->
+        <div id="fold-only">
+            <div class="step-container">
+                <h1>Fold only flow</h1>
+                <div class="image-container"></div>
+                <p class="direction">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi facere odit, doloremque placeat minima molestiae excepturi dolores explicabo et quo. Ex voluptates nihil animi dignissimos repudiandae. Tenetur reprehenderit blanditiis minima?</p>
+                <div class="acknowledge-container">
+                    Done: <input type="checkbox" id="user-acknowledge">
+                </div>
+                <div class="button-container">
+                    <button>Back</button>
+                    <button>Next</button>
+                </div>
+            </div>
+        </div>
+
+        <!--
+            Self Mailers (Folds with glue):
+                1.Unwinder
+                2.SVC
+                3.Folding unit (include segmenting the rollers, check fold to score/perf)
+                4.Stacking Table
+                5.Glue (heads, noses)
+        -->
+        <div id="fold-glue">
+            <div class="step-container">
+                <h1>Fold and Glue</h1>
+                <div class="image-container"></div>
+                <p class="direction">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi facere odit, doloremque placeat minima molestiae excepturi dolores explicabo et quo. Ex voluptates nihil animi dignissimos repudiandae. Tenetur reprehenderit blanditiis minima?</p>
+                <div class="acknowledge-container">
+                    Done: <input type="checkbox" id="user-acknowledge">
+                </div>
+                <div class="button-container">
+                    <button>Back</button>
+                    <button>Next</button>
+                </div>
+            </div>
+        </div>
+
+
     </main>
 
     <script src="./actions.js"></script>
