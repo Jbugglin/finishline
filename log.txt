@@ -1,0 +1,6 @@
+/**
+     *  Create an array for the steps in setting up the unwinder.
+     */
+    const testJSON = '["step1", "step2", "step3"]';
+    const myArray = JSON.parse(testJSON);
+    document.getElementById("direction").innerHTML = myArray[0];
