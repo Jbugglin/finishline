@@ -1,0 +1,44 @@
+Unwinder setup:
+    1. Take out of production
+            Green button -> flash -> solid Amber
+            Locking caps on splicing table 
+    2. Align hub release 
+            Disengage hubs 
+            remove air from pin
+    3. Cut paper free, close to roll on pin 
+    4. Remove pin and core, if gaylord of excess cores exist, place there, if not return to web press.
+    5. Lower hub arms below the next roll's core.
+    6. Measure roll to be hung if new job. If preexisting or roll width known, place roll on pin at these positions:
+            18" -> 23" mark on pin
+            20" -> 25.5" mark on pin 
+    7. Postition roll with inserted pin above UW hub arms so that the ends of the pin align with the locking hubs. 
+    8. Reinflate pin
+    9. Raise hub arms until it reaches operating position and pin seats correctly.
+    10. Remove blue roll tag 
+    11. Remove enough of the wrapping paper so that the initial color bars are visible.
+    12. Apply splicing tape across width of new roll where the excess was removed.
+    13. Apply the tail of the previous cut roll to the newly applied splicing tape and remove excess. 
+    14. Unlock splicing table locking caps
+    15. Press the production button to re-engage unwinder.
+            solid amber -> flashing -> solid green. 
+
+Unwinder Steering head: 
+    note: Best to be done at the beginning of a roll, beginning of a job. Double check if needed throughout. 
+    1. UW: Press the machine center mode ->|<- button
+    2. SVC: Press the settings button at top of screen (wrench)
+    3. SVC: If the "Without Knives" button is not high-lighted, select it.
+    4. SVC: begin to pull paper through slow (7m/min default min) using the play (sideways triangle) button and continuous cycle (circular button with arrows below play) button.
+    5. SVC: Watch the paper re-align side-to-side.
+    6. SVC: Once the paper appears to be consistent, stop the machine by pressing the continuous cycle button (circle with arrows inside). 
+    7. Go back to the settings (wrench)
+    8. Engage the knives by deselecting "without knives" option.
+    9. Press the home button at top-right of screen.  
+
+SVC setup:
+
+Folder setup:
+
+Stacking table setup:
+
+DPS setup:
+

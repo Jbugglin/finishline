@@ -1,6 +1,30 @@
-/**
-     *  Create an array for the steps in setting up the unwinder.
-     */
-    const testJSON = '["step1", "step2", "step3"]';
-    const myArray = JSON.parse(testJSON);
-    document.getElementById("direction").innerHTML = myArray[0];
+User Input: 
+     Job number 
+     user initials 
+
+Auto Generate:
+     Start Date 
+     Start Time 
+     End Time 
+     Total setup time = End time - Start Time <- may need to be msec 
+     Acknowledged steps for monarch documentation. 
+
+Flows (In sequential order of setup priority):
+     Sheeting (postcards/flat sheets):
+          no score/perf = UW > SVC > ST 
+          score/perf = UW > SVC > DPS > ST
+
+     Fold Only (Letters, others):
+          no score/perf = UW > SVC > FOLD > ST
+          score/perf = UW > SVC > FOLD > ST > DPS
+
+     Fold and Glue (Self-mailers):
+          no score/perf = UW > SVC > FOLD > ST > GLUE 
+          score/perf = UW > SVC > FOLD > ST > GLUE > DPS 
+
+Maybe set Flow as drop down, 
+     pick sheet/fold/Glue
+          pick option score/perf/none 
+               Display directions per flow above 
+                    Acknowledged step to continue 
+                         Last Acknowledged step printout for monarch notes. 
