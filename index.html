@@ -11,13 +11,18 @@
 </head>
 <body>
     <main>
-        <div id="job-details">
-            <!-- User Input -->
-            <input type="text" id="job-number" name="job-number" maxlength="6" required placeholder="Job Number">
-            <br>
-            <input type="text" id="user-initials" name="user-initials" maxlength="2" required placeholder="User Initials">
-            <br>
-            <input type="submit" value="Submit" onclick="printout()">
+        <div class="btn-container">
+            <button onclick="selectSheeting()">Sheeting</button>
+            <button onclick="selectFoldOnly()">Fold Only</button>
+            <button onclick="selectSelfMailer()">Self-Mailer</button>
+        </div>
+
+        <div id="instruction-container">
+            <h1 id="instruction-heading"></h1>
+            <div id="img-container">
+                <h1>img</h1>
+            </div>
+            <p></p>
         </div>
     </main>
 

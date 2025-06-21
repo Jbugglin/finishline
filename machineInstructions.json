@@ -1,0 +1,8 @@
+{
+    "machine": "Unwinder",
+    "setup-steps":
+        {
+            "step": "1",
+            "instruction": "Measure the first roll's width. If 18 inch roll, center on the pin at or around the 23 mark. If the roll measures 20 inches, center on the pin at or around the 25.5 mark."
+        }
+}

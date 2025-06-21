@@ -1,45 +1,33 @@
 /**
- * These functions will take the values from the user input and
- *  print them out asa test. This function will then call the function 
- *   to clear out the inputs as the submit button is clicked. 
+ * Sheeting
  */
-function printout() {
-    let jobNumber = document.getElementById('job-number').value;
-    let userInitial = document.getElementById('user-initials').value;
-    clearInput();
-    console.log("Job#: " +jobNumber);
-    console.log("User: " +userInitial);
-    getShortDate();
-    getTime();
-}
-
-function clearInput() {
-    document.getElementById('job-number').value = '';
-    document.getElementById('user-initials').value = '';
+function selectSheeting(){
+    console.log("sheeting");
+    hideButtons();
+    setSheetingH1();
 }
 
 /**
- * These Functions will get our starting time and date for reporting 
- *  purposes
+ * Fold Only
  */
-function getShortDate(){
-    let currentDate = new Date().toLocaleDateString('en-US');
-    console.log("Short Date: " +currentDate);
-}
-
-function getTime(){
-    let date = new Date();
-
-    //Get Hours - 24H format
-    let hours = date.getHours();
-
-    //Get minutes
-    let minutes = date.getMinutes();
-
-    //Output
-    console.log("Start Time: " +hours+ ":" +minutes);
+function selectFoldOnly() {
+    console.log("Fold Only");
+    hideButtons();
 }
 
 /**
- * On Submit, hide the logging details.
+ * Self-Mailing
  */
+function selectSelfMailer() {
+    console.log("Self-mailer");
+    hideButtons();
+}
+
+function hideButtons() {
+    document.querySelectorAll('button').forEach(el => el.style.display = 'none');
+}
+
+function setSheetingH1() {
+    let heading = document.getElementById('instruction-heading');
+    heading.innerText = "Sheeting/Postcards";
+}
